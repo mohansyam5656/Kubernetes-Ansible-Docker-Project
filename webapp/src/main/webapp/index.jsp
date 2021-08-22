@@ -42,7 +42,6 @@ src="../script/validate.js"></script>
   </table>
 </form>
 
-style.css
 
 body{
   background-color: #CCCCCC;
