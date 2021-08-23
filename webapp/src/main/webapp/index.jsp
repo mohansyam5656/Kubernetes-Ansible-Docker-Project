@@ -1,8 +1,4 @@
-<h1> Hello, Welcome to Simple DevOps Project !!   </h1>
-<h2> Deploying on a kubernetes using ansible and Docker </h2>
-<h2> Glad to see you here again !!! </h2>
-<h2> GCP Ubuntu Instance AMI using KOP - CICD PipeLine using GCP<h2>
-<h2> Good Evening All </h2>
+
   
   <%@ page import="com.telefonica.movistar.vo.UserVO" %>
 <%@ page import="com.telefonica.movistar.dao.MonitorProcessDAO" %>
@@ -16,27 +12,7 @@
 }
 </style>
 
-<%
-  MonitorProcessDAO dao = new MonitorProcessDAO();
 
-  String action = request.getParameter("action");
-  String reference = request.getParameter("reference");
-
-  if ("keepalive".equals(action)) {
-    dao.keepAlive(reference);
-  } else
-  if ("setmetrics".equals(action)) {
-    String metric1 = request.getParameter("metric1");
-    String metric2 = request.getParameter("metric2");
-    String metric3 = request.getParameter("metric3");
-    dao.setMetrics(reference, metric1, metric2, metric3);
-  } else
-  if ("reporterror".equals(action)) {
-      String message = request.getParameter("message");
-    dao.reportError(reference, message);
-  } else {
-%>
-<%@ page contentType="text/html" pageEncoding="windows-1252"%>
 <!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
 <html>
   <head>
